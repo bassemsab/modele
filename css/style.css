@@ -117,15 +117,54 @@ button,
   }
 }
 
-.product {
-  /* padding: 0 2rem; */
+.news {
+  padding: 2rem 4rem;
+  display: grid;
+  grid-gap: 1rem;
 }
+
+@media (min-width: 600px) {
+  .news {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 900px) {
+  .news {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.news-card {
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+}
+
 .product-card-image {
   border-radius: 0.5rem;
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 100%;
+}
+
+.news-card-image {
+  object-fit: cover;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+.news-card-footer {
+  padding: 1rem;
+}
+.news-link {
+  font-weight: normal;
+  color: grey;
+  font-size: x-small;
+  text-decoration: none;
 }
 
 .container {
